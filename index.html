@@ -20,7 +20,7 @@
 
 <body>
   <!-- nav bar  -->
-  <nav class="navbar  navbar-expand-lg navbar-white  bg-white">
+  <nav class="navbar  navbar-expand-lg navbar-white  bg-white" id="NAV">
     <a class="navbar-brand  text-warning" href="">Port<span class="folio">folio</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -286,6 +286,25 @@
   </div>
 
 
+
+  <script>
+    // When the user scrolls down then
+    // slide down the navbar
+    window.onscroll = function () {
+      scroll();
+    };
+
+    function scroll() {
+      if (
+        document.body.scrollTop > 40 ||
+        document.documentElement.scrollTop > 40
+      ) {
+        document.getElementById("NAV").style.top = "-160px";
+      } else {
+        document.getElementById("NAV").style.top = "0";
+      }
+    }
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
