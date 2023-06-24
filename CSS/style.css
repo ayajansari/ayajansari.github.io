@@ -133,6 +133,8 @@ h3 {
   width: 100%;
   height: 50px;
   margin: 10px 0px;
+  padding: 15px;
+  font-size: 1.2rem;
 }
 .d2,
 .d1 {
@@ -142,6 +144,8 @@ h3 {
 .enter2 {
   width: 100%;
   margin: 10px 0px;
+  padding: 15px;
+  font-size: 1.2rem;
 }
 
 .mail,
